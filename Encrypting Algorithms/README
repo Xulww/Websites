@@ -1,0 +1,5 @@
+This is a cryptography project.
+A website that takes user input and encrypts it with 3 different algorithms (MD5, SHA1 and SHA2). There is also an option to insert a salt parameter.
+The code follows the OOP techniques and also uses a dependency injection.
+
+MADE WITH PHP, HTML AND CSS.
