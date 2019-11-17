@@ -1,0 +1,34 @@
+body {
+	text-align: center;
+	margin-top: 2rem;
+	background-color: FBF5D5;
+	color: 485365;
+	font-size: 1.3rem;
+}
+
+h1, p {
+	color: B58C5B;
+}
+
+.btn {
+	margin-top: 1rem;
+	background-color: 538450;
+	color: white;
+	padding: 1rem;
+	border: none;
+}
+
+.btn:hover{
+	background-color: green;
+	cursor: pointer;
+	padding: 1.2rem;
+}
+
+input {
+	padding: 0.2rem;
+	margin-top: 0.2rem;
+}
+
+.mar-right {
+	margin-right: 0.5rem;
+}
