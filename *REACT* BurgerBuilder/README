@@ -1,0 +1,7 @@
+This is a fully functional react app with authentication and a connected database
+
+You can visit the site here: https://react-my-burger-19260.firebaseapp.com/
+(Hosted on firebase)
+
+MADE WITH REACT, FIREBASE (THE DATABASE), HTML, CSS, JAVASCRIPT and more.
+I also ran some unit tests with jest and ezyme.
