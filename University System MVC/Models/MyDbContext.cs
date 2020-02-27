@@ -15,7 +15,7 @@ namespace University.Models
         // For more information refer to the documentation:
         // http://msdn.microsoft.com/en-us/data/jj591621.aspx
     
-        public MyDbContext() : base("Server=DESKTOP-M2IP9RQ\\JORDANSQL;Database=MyDbContext;Trusted_Connection=True;")
+        public MyDbContext() : base("Server=YourServerHere;Database=MyDbContext;Trusted_Connection=True;")
         {
         }
 
