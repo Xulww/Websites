@@ -1,4 +1,7 @@
-This is my MVC ASP.NET project.
+This is my MVC ASP.NET project. MVC is software design pattern which divides the related program logic into three interconnected
+elements - Model, View and Controller. This is done to separate internal representations of information from the ways information
+is presented to and accepted from the user.
+
 It's a university system that contains information about the students, faculties, lectors and partners of an imaginary university.
 You can create, read, update and delete the information.
 
