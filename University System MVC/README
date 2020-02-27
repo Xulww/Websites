@@ -1,0 +1,5 @@
+This is my MVC ASP.NET project.
+It's a university system that contains information about the students, faculties, lectors and partners of an imaginary university.
+You can create, read, update and delete the information.
+
+MADE WITH ASP.NET, RAZOR, SQL, HTML, CSS, BOOTSTRAP AND JQUERY.
