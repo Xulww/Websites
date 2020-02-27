@@ -1,0 +1,47 @@
+﻿@model University.ViewModels.LectorsVM
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Lector</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Surname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Surname)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Partners)
+        </dt>
+
+        <dd>
+            @foreach (var item in Model.Partners)
+            {
+                if (item.Checked)
+                {
+                    <div>@item.Name</div>
+                }
+            }
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.LectorID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
