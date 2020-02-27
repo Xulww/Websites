@@ -1,0 +1,34 @@
+﻿@model IEnumerable<University.Models.Faculty>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Faculties</h2>
+<p>Here you can find all of our faculties. You can create, read, update and delete them.</p>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.FacultyName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.FacultyName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.FacultyID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.FacultyID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.FacultyID })
+        </td>
+    </tr>
+}
+
+</table>
