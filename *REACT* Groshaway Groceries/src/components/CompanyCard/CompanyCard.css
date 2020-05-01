@@ -1,0 +1,89 @@
+.companyCard {   
+    align-items: center;
+    border: 1px solid grey;
+    box-shadow: 1px 1px 15px grey;
+    border-radius: 4%;
+    background-color: #eaebd8;
+    cursor: pointer;
+    display: inline-block;
+    height: 100%;
+    justify-content: space-between;
+    margin: 0 21px 16px 21px; 
+}
+
+.companyCard:hover {
+    background-color: #eaebd8;
+    box-shadow: none;
+    opacity: 80%;
+}
+
+.companyCard img {
+    border-top-left-radius: 4%;
+    border-top-right-radius: 4%;
+    height: 250px;
+    width: 100%;
+}
+
+.companyCard .name {
+    margin: 0;
+    padding: 0.5rem 0;
+    text-align: center;
+    text-decoration: none;
+}
+
+@media (min-width: 500px) {
+    .companyCard {   
+        height: 60%;
+        width: 90%;
+        margin: 0 21px 3% 21px;
+    }
+
+    .companyCard img {
+        height: 60%;
+    }
+}
+
+@media (min-width: 768px) {
+    .companyCard {
+        height: 400px;
+        font-size: 1.4rem;
+        margin: 0 21px 3% 21px;
+    }
+
+    .companyCard img {
+        height: 350px;
+    }
+} 
+
+@media (min-width: 992px) {
+    .companyCard {
+        height: 400px;
+        font-size: 1.5rem;
+        margin: 0 21px 3% 21px;
+        width: 45%;
+    }
+
+    .companyCard img {
+        height: 350px;
+    }
+}
+
+@media (min-width: 1500px) {
+    .companyCard {
+        height: 400px;
+        font-size: 1.5rem;
+        margin: 0 21px 3% 21px;
+        width: 30%;
+    }
+}
+
+@media (min-width: 2700px) {
+    .companyCard {
+        height: 500px;
+        font-size: 1.5rem;
+    }
+
+    .companyCard img {
+        height: 450px;
+    }
+}
