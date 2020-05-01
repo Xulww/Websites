@@ -1,6 +1,11 @@
 This is a website that I developed on my own without the help of anyone else.
-You can check it out here: https://groshaway-groceries.firebaseapp.com
-It a website where you can buy products from popular shops and supermarkets and get them delivered to your door.
-It's using only hooks and I know it's not the best idea but i wanted to build a website that uses only react hooks.
+Single-page application where you can buy products from popular shops and supermarkets and get them delivered to your home.
+This is a fully functional react app with authentication and a connected database.
+Yes, i do receive the orders.
 
-MADE WITH REACT, REACT HOOKS, JAVASCRIPT, HTML and CSS!
+You can check it out here: https://groshaway-groceries.firebaseapp.com
+(Hosted on firebase)
+
+It's using only hooks and I know it's not the best idea but I wanted to build a website that uses only react hooks.
+
+MADE WITH REACT, REACT HOOKS, FIREBASE (THE DATABASE), AXIOS, JAVASCRIPT, HTML and CSS!
