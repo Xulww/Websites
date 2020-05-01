@@ -1,0 +1,30 @@
+.toolbar {
+    align-items: center;
+    background-color: #558E1D;
+    box-sizing: border-box;
+    display: flex;
+    height: 56px;
+    justify-content: space-between;
+    left: 0;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 90; 
+}
+
+.toolbar nav {
+    height: 100%;
+}
+
+.toolbar .styledText {
+    color: white;
+    font-family: 'Merienda', cursive;
+    text-decoration: none;
+}
+
+@media (max-width: 499px) {
+    .desktopOnly {
+        display: none;
+    }
+}
