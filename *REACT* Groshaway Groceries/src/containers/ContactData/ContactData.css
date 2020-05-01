@@ -1,0 +1,47 @@
+.contactData {
+    margin: 20px auto;
+    width: 80%;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.inputElement {
+    outline: none;
+    border: 1px solid #ccc;
+    background-color: white;
+    font: inherit;
+    padding: 6px 10px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.inputElement:focus {
+    outline: none;
+    background-color: #ccc;
+}
+
+@media (min-width: 600px) {
+    .contactData {
+        width: 450px
+    }
+}
+
+@media (max-width: 600px) {
+    .contactData {
+        font-size: 1rem;
+    }
+}
