@@ -1,0 +1,40 @@
+.navigationItem {
+    box-sizing: border-box;
+    display: block;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.navigationItem a {
+    box-sizing: border-box;
+    color: white;
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    
+}
+
+.navigationItem a:hover,
+.navigationItem a:active,
+.navigationItem a.active {
+    background-color: #497A18;
+    border-bottom: 4px solid #B6CD18;
+    color: white;
+}
+
+@media (min-width: 500px) {
+    .navigationItem {
+        align-items: center;
+        display: flex;
+        height: 100%;
+        margin: 0;
+        width: auto;
+    }
+    
+    .navigationItem a {
+        border-bottom: 4px solid transparent;
+        color: white;
+        height: 100%;
+        padding: 16px 10px;
+    }
+}
