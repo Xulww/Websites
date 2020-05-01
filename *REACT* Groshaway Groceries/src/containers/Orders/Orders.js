@@ -55,7 +55,7 @@ const Orders = () => {
 
     return (
         <div>
-            <div className="footer-orders-position">
+            <div className="orders">
                 {authRedirect}
                 {ordersForDisplay}
             </div>
