@@ -1,0 +1,67 @@
+.auth {
+    margin: 20px auto;
+    width: 80%;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    background-color: #eaebd8;
+    box-shadow: 1px 1px 15px grey;;
+}
+
+.footer-position {
+    height: 100%;
+    min-height: calc(100vh - 56px - 115px);
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+h2 {
+    margin: 10px 0;
+    padding: 0;
+}
+
+.note {
+    margin: 0;
+    padding: 0;
+    color: grey;
+}
+
+.label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.inputElement {
+    outline: none;
+    border: 1px solid #ccc;
+    background-color: #f6f6ee;
+    font: inherit;
+    padding: 6px 10px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.inputElement:focus {
+    outline: none;
+    background-color: #ccc;
+}
+
+@media (min-width: 768px) {
+    .auth {
+        width: 550px;
+    }
+} 
+
+@media (min-width: 2700px) {
+    .auth {
+        width: 850px;
+        height: 400px;
+    }
+}
