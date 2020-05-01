@@ -1,0 +1,37 @@
+.button {
+    background-color: #e6a400;
+    border: 1px solid grey;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    font: inherit;
+    font-weight: bold;
+    margin: 10px;
+    outline: none;
+    padding: 10px;   
+}
+
+.btn-grey {
+    background-color: grey;
+    border: 1px solid grey;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    font: inherit;
+    font-weight: bold;
+    margin: 10px;
+    outline: none;
+    padding: 10px;
+}
+
+.btn-basket {
+    background-color: #e6a400;
+    border: 1px solid grey;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    font: inherit;
+    font-weight: bold;
+    outline: none;
+    padding: 10px;
+}
