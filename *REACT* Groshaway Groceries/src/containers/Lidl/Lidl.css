@@ -1,0 +1,26 @@
+.basket {
+    float: left;
+    width: 29%;
+    height: 100%;
+    border: 1px solid grey;
+    overflow: auto;
+}
+
+.products {
+    height: 100%;
+    float: right;
+    width: 70%;
+}
+
+@media (max-width: 600px) {
+    .basket {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1300px) {
+    .basket {
+        width: 23%;
+    }
+}
+
