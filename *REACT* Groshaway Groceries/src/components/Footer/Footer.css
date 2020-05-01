@@ -1,0 +1,10 @@
+.footer {
+    color: #212121;
+    font-size: 1.1rem;
+    margin: 10px;
+}
+
+hr {
+    border: 1px solid #212121;
+    width: 92%;
+}
