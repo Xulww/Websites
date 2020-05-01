@@ -9,5 +9,7 @@ You can check it out here: https://groshaway-groceries.firebaseapp.com
 (Hosted on firebase)
 
 It's using only hooks and I know it's not the best idea but I wanted to build a website that uses only react hooks.
+It has a bug that occured during deployment for some reason when you hover on a supermarket card it disappears but you can still click it
+and the app works fine. It's a problem with the css i will fix it in the future. Strangely it's ok when i run it through the console. lol
 
 MADE WITH REACT, REACT HOOKS, FIREBASE (THE DATABASE), AXIOS, JAVASCRIPT, HTML, CSS and more!
