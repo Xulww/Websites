@@ -1,0 +1,17 @@
+{% extends 'flights/base.html' %}
+    {% block title %}Flight Details{% endblock %}
+    {% block body %}
+        <h1>{{ flight.datetime}} - {{ flight.airport }}</h1>
+        <h4>Price: ${{ flight.price }}</h4>
+        <h4>Total Seats: {{ flight.seats }} Taken: {{ flight.ticket_set.count }}</h4>
+        <h4>Who's taking the flight:</h4>
+        {% if flight.ticket_set.all %}
+            <ul>
+                {% for ticket in flight.ticket_set.all %}
+                    <li>{{ ticket.name }} {{ ticket.surname }}</li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>No one has bought a ticket for this flight so far...</p>
+        {% endif %}
+    {% endblock %}

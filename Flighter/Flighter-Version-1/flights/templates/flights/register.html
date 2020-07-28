@@ -1,0 +1,11 @@
+{% extends "flights/base.html" %}
+{% block title %}Register{% endblock %}
+{% block body %}
+{% include "flights/messages.html" %}
+    <form class="form-group" method="POST">
+        {% csrf_token %}
+        {{form.as_ul}}
+        <input type="submit" value="Register">
+    </form>
+    or IF you want you can <a href="{% url 'flights:login' %}">Login</a>
+{% endblock %}
