@@ -1,0 +1,6 @@
+{% extends 'web_site/base.html' %}
+    {% block body %}
+        <h1>Flighter</h1>
+        <p>Flighter is a web site where users can create flights or buy tickets from other user-created flights!</p>
+        <a class="form-group btn btn-success" href="{% url 'flights:index' %}">See Flights</a>
+    {% endblock %}

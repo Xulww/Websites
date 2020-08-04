@@ -1,0 +1,11 @@
+{% extends "web_site/base.html" %}
+{% block title %}Register{% endblock %}
+{% block body %}
+    <h2>Register</h2>
+    <form class="form-group" method="POST">
+        {% csrf_token %}
+        {{form.as_ul}}
+        <input type="submit" value="Register">
+    </form>
+    or IF you want you can <a href="{% url 'web_site:login' %}">Login</a>
+{% endblock %}

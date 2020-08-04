@@ -1,0 +1,19 @@
+{% extends "web_site/base.html" %}
+{% block title %}{{ user.username }}{% endblock %}
+{% block body %}
+    <h1>{{ user.username }}</h1>
+    <h3>All tickets:</h3>
+    {% if not tickets %}
+        <p>No tickets!</p>
+    {% endif %}
+    {% for ticket in tickets %}
+        <a href="{% url 'flights:detail' ticket.flight.id %}">{{ ticket.flight }}</a><br>
+    {% endfor %}
+    <h3>All flights:</h3>
+    {% if not flights %}
+        <p>No flights!</p>
+    {% endif %}
+    {% for flight in flights %}
+        <a href="{% url 'flights:detail' flight.id %}">{{ flight }}</a><br>
+    {% endfor %}
+{% endblock %}
