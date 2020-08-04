@@ -29,6 +29,7 @@ class Flight(models.Model):
     seats = models.IntegerField(blank=True, null=True)
     created_by = models.ForeignKey(User, blank=True, null=True, on_delete=models.CASCADE, default=1)
     is_deleted = models.BooleanField(default=False)
+    
     objects = FlightManager.from_queryset(FlightQuerySet)()
     defaults = DefaultFlightManager.from_queryset(FlightQuerySet)()
 
