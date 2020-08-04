@@ -1,0 +1,6 @@
+This is a project more focused on the backend and the MTV architecture provided by Django than the frontend.
+
+You are looking at the first version of the project. It's a web app where users can register/login, CRUD flights and buy tickets for flights created by them or 
+other users. It uses a User model called Person that I've made from scratch.
+
+MADE WITH DJANGO, HTML, CSS, BOOTSTRAP AND SQLITE
