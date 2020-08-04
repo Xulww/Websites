@@ -5,6 +5,6 @@ other users. There is a custom command called "createflights" which fetches data
 database. I've also made a REST API for the flights application where you can get all of the flights on the website. API port - flights/api.
 
 NOTE: I made the fetching from the external API idempotent but I forgot to make it idempotent in the case of a flight getting deleted and then running the command
-again. Just set the is_deleted field in the flight model to true.
+again. Just set the is_deleted field in the flight model to true when deleting a flight.
 
 MADE WITH DJANGO, HTML, CSS, BOOTSTRAP AND SQLITE
