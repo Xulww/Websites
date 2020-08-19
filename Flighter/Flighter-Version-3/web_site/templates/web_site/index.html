@@ -1,0 +1,47 @@
+{% extends 'web_site/base.html' %} {% block body %}
+<h1>Flighter</h1>
+<p>
+  Flighter is a web site where users can create flights or buy tickets from
+  other user-created flights!
+</p>
+<a class="form-group btn btn-success" href="{% url 'flights:index' %}"
+  >See Flights</a
+>
+<table border="1" style="width: 100%;">
+  <tr style="border: 3px solid black;">
+    <th>Flight</th>
+    <th>All Tickets</th>
+    <th>Last Ticket</th>
+  </tr>
+  {% for flight in flights.object_list %}
+  <tr>
+    <td>{{ flight.datetime }} - {{ flight.airport }}</td>
+    <td>
+      <ul>
+        {% for ticket in flight.tickets %}
+        <li>{{ ticket.get_display_name }}</li>
+        {% endfor %}
+      </ul>
+    </td>
+    <td>{{ flight.last_tickets.0.get_display_name }}</td>
+  </tr>
+  {% endfor %}
+</table>
+<div class="pagination">
+  {% if flights.has_previous %}
+    <a class="pagination-action" href="?page=1&flights_per_page={{ fpp }}"><i class="fas fa-angle-double-left"></i></a>
+    <a class="pagination-action" href="?page={{ flights.previous_page_number }}&flights_per_page={{ fpp }}"><i class="fas fa-angle-left"></i></a>
+  {% endif %}
+  {% for num in flights.paginator.page_range %}
+    {% if flights.number == num %}
+      <strong class="pagination-number">{{ num }}</strong>
+    {% elif num > flights.number|add:'-3' and num < flights.number|add:'3' %}
+      <span class="pagination-number">{{ num }}</span>
+    {% endif %}
+  {% endfor %}
+  {% if flights.has_next %}
+    <a class="pagination-action" href="?page={{ flights.next_page_number }}&flights_per_page={{ fpp }}"><i class="fas fa-angle-right"></i></a>
+    <a class="pagination-action" href="?page={{ flights.paginator.num_pages }}&flights_per_page={{ fpp }}"><i class="fas fa-angle-double-right"></i></a>
+  {% endif %}
+</div>
+{% endblock %}
