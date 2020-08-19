@@ -1,0 +1,19 @@
+{% extends 'web_site/base.html' %}
+
+{% load static %}
+
+    {% block title %}Flight Details{% endblock %}
+    {% block extra_css %}
+        <link rel="stylesheet" href="{% static 'build/index.css' %}">
+    {% endblock %}
+    {% block body %}
+        <h1>{{ flight.datetime}} - {{ flight.airport }}</h1>
+        <h4>Price: ${{ flight.price }}</h4>
+        <h4>Total Seats: {{ flight.seats }} Taken: {{ flight.ticket_set.count }}</h4>
+        <h4>Who has bought a ticket for this flight:</h4>
+        <div id="root"></div>
+    {% endblock %}
+
+    {% block extra_js %}
+        <script src="{% static 'build/index.js' %}"></script>
+    {% endblock %}

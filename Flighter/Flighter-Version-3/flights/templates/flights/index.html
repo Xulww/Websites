@@ -1,0 +1,40 @@
+{% extends 'web_site/base.html' %}
+    {% block body %}
+        {% if object_list %}
+            <h1>All flights on Flighter</h1>
+            {% if user_id  %}
+                <a class="form-group btn btn-primary" href="{% url 'flights:flight-add' %}">Add Flight</a>
+            {% endif %}
+            {% if not user_id  %}
+                <p>In order to add flights or buy tickets you need an account</p>
+                <a class="form-group btn btn-success" href="{% url 'web_site:register' %}">Register</a>
+            {% endif %}
+            <form class="form-group" action="" method="get">
+                <input type="text" name="q" placeholder="Search Flights..." />
+                <button type="submit" class="btn btn-dark btn-sm" >Filter</button>
+            </form>
+            <p><small>You can search only by airport name or price!</small></p>
+            <ul>
+                {% for flight in object_list %}
+                    <li><a href="{% url 'flights:detail' flight.id %}">{{ flight.datetime }} - {{ flight.airport }}</a></li>
+                    {% if user_id == flight.created_by_id and not flight.is_expired %}
+                        <a class="btn btn-secondary btn-sm" href="{% url 'flights:flight-update' flight.id %}">Update</a>
+                        <form action="{% url 'flights:flight-delete' flight.id %}" method="post" style="display: inline;">
+                            {% csrf_token %}
+                            <input type="hidden" name="flight_id" value="{{ flight.id }}" />
+                            <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                        </form>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        {% else %}
+            <h2>No flights!</h2>
+            {% if not user_id  %}
+                <p>In order to add flights or buy tickets you need an account</p>
+                <a class="form-group btn btn-success" href="{% url 'web_site:register' %}">Register</a>
+            {% endif %}
+            {% if user_id  %}
+                <a class="form-group btn btn-primary" href="{% url 'flights:flight-add' %}">Add Flight</a>
+            {% endif %}
+        {% endif %}
+    {% endblock %}

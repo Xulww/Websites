@@ -1,0 +1,10 @@
+{% extends 'web_site/base.html' %}
+    {% block title %}Add a New Flight{% endblock %}
+    {% block body %}
+        <h2>Add Flight</h2>
+        <form class="form-horizontal" action="" method="post">
+            {% csrf_token %}
+            {% include 'flights/form-template.html' %}
+            <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+    {% endblock %}
