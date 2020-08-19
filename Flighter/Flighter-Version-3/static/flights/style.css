@@ -1,0 +1,31 @@
+body {
+  background-image: url("images/foggy-birds.png");
+}
+
+.navbar-brand {
+  font-family: cursive;
+}
+
+.pagination {
+  display: block;
+  margin: 1em;
+  text-align: center !important;
+}
+
+.pagination-action {
+  display: inline-block;
+  font-size: 1.2em;
+  margin: 0 0.1em;
+  padding: 0.4em;
+}
+
+.pagination-action:hover {
+  color: darkblue;
+}
+
+.pagination-number {
+  display: inline-block;
+  font-size: 1.2em;
+  margin: 0 0.1em;
+  padding: 0.3em 0.1em;
+}
