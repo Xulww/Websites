@@ -31,6 +31,7 @@ def index(request):
     })
 
 
+# this isn't used anywhere it's here just for display
 def index_old(request):
     # tickets = Ticket.objects.raw("SELECT id, flight_id, group_concat(DISTINCT user_id) as fgroup FROM flights_ticket GROUP BY flight_id")
     # print(tickets.__dict__)
