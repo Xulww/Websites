@@ -1,1 +1,10 @@
-test
+This is a project more focused on the backend and the MTV architecture provided by Django than the frontend.
+
+You are looking at the second version of the project. It's a web app where users can register/login, CRUD flights and buy tickets for flights created by them or 
+other users. There is a custom command called "createflights" which fetches data (flights) from an external REST api and inserts the needed informations into the 
+database. I've also made a REST API for the flights application where you can get all of the flights on the website. API port - flights/api.
+
+NOTE: I made the fetching from the external API idempotent but I forgot to make it idempotent in the case of a flight getting deleted and then running the command
+again. Just set the is_deleted field in the flight model to true when deleting a flight.
+
+MADE WITH DJANGO, HTML, CSS, BOOTSTRAP AND SQLITE
